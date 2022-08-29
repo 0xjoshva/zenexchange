@@ -26,6 +26,21 @@ const routes = [
     name: "support",
     component: () => import("../views/SupportView.vue"),
   },
+  {
+    path: "/register",
+    name: "register",
+    component: () => import("../views/RegisterView.vue"),
+  },
+  {
+    path: "/users",
+    name: "users",
+    component: () => import("../views/UsersView.vue"),
+  },
+  {
+    path: "/transactions",
+    name: "transactions",
+    component: () => import("../views/UsersView.vue"),
+  },
 ];
 
 const router = createRouter({
