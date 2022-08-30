@@ -10,14 +10,16 @@ export default {
 };
 </script>
 <style>
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-/* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&family=Palanquin:wght@200;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
-/* 
-font-family: 'Roboto', sans-serif; 
-font-family: 'Segoe UI', sans-serif;
-                                                
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("./fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("./fonts/Satoshi-Variable.woff") format("woff"),
+    url("./fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
 */
 /* CSS RESET */
 html {

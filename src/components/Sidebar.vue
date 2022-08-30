@@ -8,16 +8,8 @@
         ><img class="book-open" src="../assets/book-open.svg" alt="" />
         Blog</router-link
       >
-      <router-link to="/exchange" class="nav-link"
-        ><img
-          class="book-open"
-          src="../assets/xchange.svg"
-          alt=""
-        />Exchange</router-link
-      >
-      <router-link to="/dashboard" class="nav-link"
-        ><img src="../assets/user.svg" alt="" /> Account</router-link
-      >
+      <router-link to="/market-overview" class="nav-link"><img src="../assets/xchange.svg"/> Markets</router-link>
+      <router-link to="/dashboard" class="nav-link"><img src="../assets/user.svg" alt="" /> Account</router-link>
       <router-link to="/support" class="nav-link"
         ><img src="../assets/headphones.svg" alt="" /> Support</router-link
       >
@@ -44,24 +36,19 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
             <button
               type="button"
-              class="btn-close"
+              class="btn-close btn-close-white"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="modal-body">
+            <form action="">
+              <input type="email" id="loginEmail" placeholder="Email" />
+              <input type="password" id="loginPass" placeholder="Password" />
+              <button data-bs-dismiss="modal">Login</button>
+            </form>
           </div>
         </div>
       </div>
@@ -130,5 +117,68 @@ nav {
 
 #control {
   white-space: nowrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+/* button {
+  color: black;
+  background: var(--orange);
+  display: flex;
+  align-items: center;
+  padding: 10px 33px;
+  width: fit-content;
+  border: none;
+  border-radius: 3px;
+}
+button p {
+  font-size: 1rem;
+  padding-right: 1rem;
+  font-weight: 600;
+} */
+
+#loginPass {
+  width: 332px;
+  height: 45px;
+  border: 1px solid #555454;
+  background: var(--bgcolor);
+  border-radius: 4px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 96.51%;
+  padding-left: 0.6rem;
+  color: white;
+}
+#loginEmail {
+  width: 332px;
+  height: 45px;
+  border: 1px solid #555454;
+  background: var(--bgcolor);
+  border-radius: 4px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 96.51%;
+  padding-left: 0.6rem;
+  color: white;
+}
+#loginEmail:focus,
+#loginPass:focus {
+  border: 1px solid var(--orange);
+  outline: none;
+}
+.modal-content {
+  background: var(--bgcolor);
+}
+.modal-header {
+  border-bottom: none;
 }
 </style>
