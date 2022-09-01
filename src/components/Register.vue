@@ -41,7 +41,7 @@ export default {};
 <style scoped>
 .register {
   background: var(--bgcolor);
-  height: 100vh;
+  height: 84vh;
   width: 100%;
   font-family: "Segoe UI", sans-serif;
   display: flex;
@@ -49,7 +49,7 @@ export default {};
   justify-content: center;
 }
 h1 {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Satoshi-Variable";
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -60,7 +60,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.39);
+  color: rgba(255, 255, 255, 0.699);
   padding-bottom: 1.5rem;
   width: 40rem;
 }
@@ -71,7 +71,7 @@ form {
 }
 button {
   color: black;
-  background: var(--orange);
+  background: var(--highlight);
   display: flex;
   align-items: center;
   padding: 10px 33px;
@@ -87,7 +87,7 @@ button p {
 input {
   width: 632px;
   height: 45px;
-  border: 1px solid #555454;
+  border: 1px solid white;
   background: var(--bgcolor);
   border-radius: 4px;
   font-family: "Segoe UI";
@@ -99,28 +99,10 @@ input {
   color: white;
 }
 input:focus {
-  border: 1px solid var(--orange);
+  border: 1px solid var(--highlight);
   outline: none;
 }
-textarea {
-  background: var(--bgcolor);
-  border-radius: 4px;
-  resize: none;
-  width: 708px;
-  border: 1px solid #555454;
-  font-family: "Segoe UI";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 96.51%;
-  padding-left: 0.6rem;
-  color: white;
-  padding-top: 0.5rem;
-}
-textarea:focus {
-  border: 1px solid var(--orange);
-  outline: none;
-}
+
 #inputgroup {
   display: flex;
   flex-direction: column;
@@ -130,7 +112,7 @@ textarea:focus {
   border: 1px solid #3e3e3e;
   border-radius: 3px;
   background-color: var(--bgcolor);
-  accent-color: var(--orange);
+  accent-color: var(--highlight);
   width: 15px;
   height: 15px;
   background: transparent;
@@ -138,14 +120,17 @@ textarea:focus {
 .terms {
   display: flex;
   align-items: center;
-  margin-top: -.6rem;
+  margin-top: -0.6rem;
 }
 .terms p {
   padding-left: 0.3rem;
-  color: #6d6d6d;
+  color: rgba(255, 255, 255, 0.39);
 }
 .terms span {
-  color: var(--orange);
+  color: var(--highlight);
   text-decoration: underline;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.39);
 }
 </style>

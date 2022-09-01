@@ -1,12 +1,13 @@
 <template>
-  <Sidebar />
+  <Navbar />
   <router-view />
 </template>
 <script>
 import Sidebar from "./components/Sidebar.vue";
+import Navbar from "./components/Navbar.vue";
 export default {
   name: "App",
-  components: { Sidebar },
+  components: { Sidebar, Navbar },
 };
 </script>
 <style>
@@ -48,7 +49,9 @@ ul {
   padding: 0;
   font-weight: normal;
 }
-
+body {
+  background: #192185;
+}
 ol,
 ul {
   list-style: none;
@@ -62,8 +65,8 @@ img {
 /* COLOR SCHEME */
 :root {
   /* backgrounds */
-  --bgcolor: #1a1818;
-  --orange: #ff9900;
+  --bgcolor: #192185;
+  --highlight: #0084ff;
   --dwhite: #c8c8c8;
   --white: #ffffff;
 }
@@ -84,7 +87,7 @@ img {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: var(--lgrey);
+  background-color: white;
 }
 
 nav a :active {
